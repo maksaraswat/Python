@@ -13,7 +13,7 @@ if not os.path.exists(destination):
 # and saves in specfied directory
 def file_download():
 	mykey = paramiko.RSAKey.from_private_key_file('~/My-ssh.priv')  # This is when password less login is setup
-#	password = '/K,@]Fd5'                                           # This is used when password is used to login  	
+#	password = 'mypassword'                                           # This is used when password is used to login  	
 	host = 'X.X.X.X'
 	username = 'Y'
 	port = 22
