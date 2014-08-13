@@ -25,7 +25,7 @@ def file_download(hostname, username,port, password):
 	sftp.chdir('outgoing')
 	for filename in sftp.listdir():
 		try:
-			if filename.startswith(formattedtime):
+			if filename.startswith('file_%s.csv'%formattedtime):
 				localpath= destination + '/' + filename
 				print "Downloading files ==> " + filename
 				sftp.get(filename, localpath)	
