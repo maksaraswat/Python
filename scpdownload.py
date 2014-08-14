@@ -26,7 +26,7 @@ def file_download(hostname, username,port, password):
 	for filename in sftp.listdir():
 		try:
 			if filename.startswith('file_%s.csv'%formattedtime):
-				localpath= destination + '/' + filename
+				localpath= os.getcwd() + '/' + filename
 				print "Downloading files ==> " + filename
 				sftp.get(filename, localpath)	
 		except IOError as e:
