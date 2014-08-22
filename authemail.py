@@ -22,6 +22,9 @@ def sendemail(status,To, From, Server, port, username, password, bodymessage):
 		server.quit()
 	except Exception, e:
 		logging.error(e)
+		
+def main():
+	sendemail(status,To, From, Server, port, username, password, bodymessage)		
 
 if __name__ == '__main__':
 	main()
