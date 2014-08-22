@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import smtplib, logging
+import smtplib, logging, string
 
 # This is for logging any exceptions and/or errors. It will be logged in /var/log/syslog with message similar to
 # '2014-08-18 16:24:58,064 ERROR service_start global name 'sendeail' is not defined'
